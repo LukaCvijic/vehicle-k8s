@@ -16,11 +16,12 @@ spec:
     spec:
       containers:
         - name: appsrv
-          image: ghcr.io/lukacvijic/backend:latest
+          image: ghcr.io/lukacvijic/vehicle-k8s/backend:latest
           # remove this when stable. Currently we do not take care of version numbers
-#          imagePullPolicy: Always
-#          ports:
-#            - containerPort: 8080
+          imagePullPolicy: Always
+          command: ['tail', '-f', '/dev/null']
+          ports:
+            - containerPort: 8080
 #          startupProbe:
 #            httpGet:
 #              path: /q/health
