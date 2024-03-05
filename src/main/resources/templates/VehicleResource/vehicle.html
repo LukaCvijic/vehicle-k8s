@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{vehicle.brand} {vehicle.model}</title>
+    <style>
+        html{
+            background: rgb(255,171,6);
+            background: radial-gradient(circle, rgba(142,25,25,1) 0%, rgba(255,171,6,1) 100%);
+        }
+
+        body{
+            color: white;
+            height: 98vh;
+
+            display: flex;
+            align-items: center;
+        }
+
+        h1, div{
+            font-size: xxx-large;
+
+            width: fit-content;
+
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>{vehicle.brand}</h1>
+    <div>Model: {vehicle.model}</div>
+</div>
+</body>
+</html>
